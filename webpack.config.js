@@ -10,6 +10,13 @@ const PATHS = {
   build: path.join(__dirname, 'build'),
 };
 
+const styleLoader = {
+  loader: 'style-loader',
+  options: {
+    sourceMap: true,
+  },
+};
+
 const conf = {
   context: PATHS.source,
   entry: './index.js',
